@@ -65,10 +65,12 @@ describe('cookie', function() {
       assert(cookie.get('ajs:test') === null);
     });
 
+    /* .skip wasn't skipping it on CI.
     // TODO: unskip once we don't use `window`, instead mock it :/
     it.skip('should set domain localhost to `""`', function(){
       cookie.options({});
       assert(cookie.options().domain === '');
     });
+    */
   });
 });
